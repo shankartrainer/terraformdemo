@@ -17,3 +17,6 @@ This Terraform module creates following resources
 - 1 Bastion windows VM with pulic IP address
 - 1 Web Linux VM with public IP address
 
+```PowerShell
+get-command
+```
