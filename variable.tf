@@ -33,6 +33,18 @@ variable "bastion_vm" {
   
 }
 
+
+variable "appvm_name" {
+  type = string
+  default = "app-vm"
+}
+
+variable "dbvm_name" {
+  type = string
+  default = "db-vm"
+  
+}
+
 variable "virtual_network" {
   type = string
   default = "vnet"
@@ -117,4 +129,16 @@ variable "my_local_pip" {
 type = string
 default = "13.71.66.0/24"
 description = "Please provide your IP local machine public IP address to open port connectivity"
+}
+
+variable "admin_username" {
+  type = string
+  default = "azureuser"
+  
+}
+
+variable "admin_password" {
+  type = string
+  default = "password@123"
+  
 }

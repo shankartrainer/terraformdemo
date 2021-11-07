@@ -26,8 +26,8 @@ resource "azurerm_windows_virtual_machine" "bastion-vm" {
   resource_group_name = azurerm_resource_group.basicrg.name
   location            = azurerm_resource_group.basicrg.location
   size                = var.windows_vm_size
-  admin_username      = "azureuser"
-  admin_password      = "password@123"
+  admin_username      = var.admin_username
+  admin_password      = var.admin_password
   network_interface_ids = [
     azurerm_network_interface.bastionnic.id,
   ]
